@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import pyperclip as pc
 import aocparser as ap
 
 
@@ -61,6 +62,11 @@ def part2(filename):
     return result
 
 
+def pr(s):
+    print(s)
+    pc.copy(s)
+
+
 def main():
     if len(sys.argv) != 2:
         print("Input missing !")
@@ -69,9 +75,9 @@ def main():
     filename = sys.argv[1]
 
     p1 = part1(filename)
-    print(p1)
+    pr(p1)
     p2 = part2(filename)
-    print(p2)
+    pr(p2)
 
 
 if __name__ == "__main__":
