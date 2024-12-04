@@ -7,10 +7,6 @@ import aocparser as ap
 letters = ["X", "M", "A", "S"]
 letters_rev = ["S", "A", "M", "X"]
 
-xlet = ["M", "A", "S"]
-xlet_rev = ["S", "A", "M"]
-
-
 def hori(mat, i, j, let):
     if (
         j + 3 < len(mat[0])
